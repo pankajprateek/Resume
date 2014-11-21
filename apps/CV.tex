@@ -1,0 +1,213 @@
+\documentclass[a4paper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+\usepackage{pbox}
+\usepackage{fullpage}
+\usepackage{longtable}
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+%\setmainfont[
+%SmallCapsFont = Fontin-SmallCaps.otf,
+
+%BoldFont = Fontin-Bold.otf,
+
+%ItalicFont = Fontin-Italic.otf
+%]
+%{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+  
+\pagestyle{empty} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge \textsc{Pankaj Prateek Kewalramani}
+	}\par}
+
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Info
+\section{Personal Information}
+
+\begin{tabular}{rlrl}
+    \textsc{Address:}   & B218, Hall-9, IIT Kanpur, Kanpur (India) \\
+    \textsc{Phone:}     & +91 94 50 039421\\
+    \textsc{email:}     & \href{mailto:pratikkr@cse.iitk.ac.in}{pratikkr@cse.iitk.ac.in},
+                        \href{mailto:pankaj200292@gmail.com}{pankaj200292@gmail.com} \\
+    \textsc{Web:}       & \href{http://home.iitk.ac.in/~pratikkr}{home.iitk.ac.in/\textasciitilde pratikkr}
+\end{tabular}
+
+%Section: Education first
+\section{Education}
+\begin{longtable}{rl}	
+ 2010-2015\footnotemark[1] & Master of Technology, \textbf{Indian Institute of Technology Kanpur}, India\\
+& Thesis: ``Approximation Algorithms for Common Subtree and Related Problems'' \\
+& \small Advisors: Prof. Shashank Kumar Mehta\\
+& \normalsize Major: Computer Science and Engineering\\
+& \textsc{Gpa}: 10.0/10.0\\&\\
+2010-2015\footnotemark[1] & Bachelor of Technology, \normalsize\textbf{Indian Insitute of Technology Kanpur}, India\\
+&\normalsize Major: Computer Science and Engineering\\
+& \textsc{Gpa}: 8.8/10.0\\&\\
+2008-2010 & 12\textsuperscript{th} Grade (High School), \normalsize\textbf{DAV Public School, Kota}, India\\
+&\normalsize Major Subjects: Mathematics, English, Physics, Chemistry\\
+& \textsc{Result}: 91\%\\
+\end{longtable}
+\footnotetext[1]{Expected to be completed in June 2015.}
+
+\section{Publications}
+\textsc{Anaphora without syntax - A Multi-lingual Approach for Geometry Constructions}\\
+  {\small Pankaj P., Jeetesh M., Amey K., Sumit G., Amitabha M. Anaphoras without syntax - in a Geometry Construction context. To appear in ICON, 2014.}
+       
+%Section: Research Experience after Education
+\section{Research Experience}
+\begin{longtable}{r|p{12cm}}
+ \textsc{May 2014-Present} & View and Shape Interpolation between Multiple Sketches\\
+ &  {\small Advisors: Prof. Vinay Namboodiri and Dr. Adrien Bousseau}\\
+ &\small{Objective of the thesis is to interpolate between sketches belonging to the same functional class, but varying in shape as well as view, using minimal user input. The research challenges involved are twofold: non-rigid shape matching and artifact free blending for sketches. Currently, we are trying to \textbf{adapt existing methods for shape matching and non-rigid point set registration to sketchy input}. Later, we plan to develop a novel algorithm which can warp and blend sketches without producing visible artifacts.}\\
+ \multicolumn{2}{c}{} \\
+ \textsc{Aug 2013-Present} & Isolation in Minor-free Graphs\\ 
+ &{\small Advisor: Prof. Raghunath Tewari}\\
+ &\small{\textbf{Solved the long standing problem} of deterministically isolating a perfect matching for minor-free graphs using a parallel algorithm. As a result, we determined that construction of perfect matching for $K_{3,3}$-free and $K_5$-free graphs is in complexity class NC. Currently, writing a research paper on the results obtained.}\\
+ & \small{An older technical report is available at: \href{http://home.iitk.ac.in/~arorar/cs697/repo.pdf}{home.iitk.ac.in/\textasciitilde arorar/cs697/repo.pdf}}\\
+ \multicolumn{2}{c}{} \\
+\textsc{Summer 2013} & Crowdanalysis of Images (Reseacrh Intern at Adobe ATL, India)\\
+&{\small Advisor: Ramesh Srinivasaraghavan}\\
+&\small{Developed an asymmetric \textbf{Game With A Purpose (GWAP)}, PicCharades, to annotate images with tags for actions, objects and emotions. Applied gamification theory concepts to attract players via leaderboards, social incentives and traditional game element of competitiveness. \textbf{Received full time job offer.}}\\
+& \small{GWAP available at: \href{https://apps.facebook.com/piccharades}{https://apps.facebook.com/piccharades} (Requires FB Login)}\\
+\multicolumn{2}{c}{} \\
+\textsc{Spring 2012} & Cross Lingual Word Sense Disambiguation\\
+&{\small Advisor: Prof. Amitabha Mukerjee}\\
+&\small{Tagged words in Hindi Wikipedia articles needing disambiguation using their appropriate sense tags. Used cross-lingual information from corresponding English Wikipedia articles, WordNet, Hindi WordNet and Hindi-English dictionary to achieve \textbf{sense-tagging accuracy of 81\%}}.\\
+& \small{Project webpage: \href{http://home.iitk.ac.in/~arorar/cs365/projects/}{home.iitk.ac.in/\textasciitilde arorar/cs365/projects/}}\\
+\end{longtable}
+
+%Section: Scholarships and additional info
+\section{Scholarships, Achievements and Awards}
+\begin{tabular}{rp{13cm}}
+2014 & Interned at INRIA, France through the \textbf{INRIA Internships Program}\\
+2010-2014 & Merit-cum-Means Scholarship, IIT Kanpur, for maintaining good academic record\\
+2012-2013 & Academic Excellence Award, IIT Kanpur, given to \textbf{top 5\% students}\\
+2010 & \textbf{All India Rank of 345 (top 0.1\%)} in IIT-JEE exam taken by over 400,000 students\\
+2008-2010 & KVPY Fellowship for budding scientists, Govt. of India (awarded to 200 students)\\
+2008-2010 & \textbf{96\% score} in 12\textsuperscript{th} grade exam (standard high school test) conducted by CBSE, India\\
+2008-2009 & National Talent Search Scholarship, Govt. of India (awarded to 1000 students)
+\end{tabular}
+
+\section{Teaching}
+\begin{tabular}{r|p{12cm}}
+ \textsc{Fall 2014} & Teaching Assistant, Algorithms-II (Advanced Algorithms)\\
+ &\small{Responsible for guiding 110 students in the course}\\ %% FIXME
+ \multicolumn{2}{c}{} \\
+ \textsc{Summer 2014} & Instructor, Advanced C\texttt{++}\\
+ &\small{Taught Object Oriented Programming, Polymorphism, STL and Exceptions in C++ to a batch of more than 150 students during ACA summer school 2014}\\ %% FIXME + Course Material Link
+\end{tabular}
+
+\section{Talks}
+\begin{tabular}{r|p{12cm}}
+ \textsc{Fall 2014} & Unique Games Conjecture: Subhash Khot wins the Nevanlinna prize (SIGTACS Talk)\\
+ &\small{The talk presented was to understand the Unique Games Conjecture (UGC) and the importance of it in Theoretical Computer Sciences. It consisted of complexity of approximating problems, PCP Theorem and the need for UGC. Finally, inapproximability results using UGC were derived and the connections between geometry, Fourier analysis and Theoretical Computer Sciences were shown.}\\
+% &\small{Notes available at  \href{http://home.iitk.ac.in/~arorar/cs676/report.pdf}{home.iitk.ac.in/\textasciitilde arorar/cs676/report.pdf}}\\
+ \multicolumn{2}{c}{} \\
+ \textsc{Spring 2014} & A combinatorial primal–dual approach to semidefinite programs\\ 
+ &\small{Primal-Dual approach has become a ubiquitous tool is deriving approximate solution using Linear Programming. This talk, motivated by the works of Sanjeev Arora, Elad Hazan, and Satyen Kale, develops a generalized primal-dual approach to solve SDPs using a modification of Matrix Multiplicative Weights update rule to symmetric matrices.}\\
+ \multicolumn{2}{c}{} \\
+\textsc{Fall 2013} & The Google Similarity Distance\\
+&\small{This talk, motivated by the works of Rudi L. Cilibrasi, and Paul M. B. Vitanyi, presents a theory of quantifying similarity between words and phrases based on information distance and Kolmogorov Complexity. By calculating similarity based on Google page counts, applications to hierarchial clustering, classification, and language translation are discussed.}\\
+\end{tabular}
+
+\section{Skills}
+\begin{tabular}{rl}
+Programming Languages: & C/C++, Python, MATLAB\\
+Graphics: & OpenGL (using C), WebGL (using three.js)\\
+Utilities: & make, git, bash, \LaTeX, Adobe Photoshop\\
+Web Technologies: & PHP, Javascript, Google App Engine, HTML/CSS\\
+\end{tabular}
+
+\section{Relevant Courses}
+\begin{tabular}{ll}
+Approximation Algorithms & Computational Geometry\\
+Semi-definite Programming & Algorithmic Information Theory\\
+Artificial Intelligence Programming & Data Structures and Algorithms\\
+Modern Cryptology & Data Compession\\
+Algorithms-II & Data Structures and Algorithms\\
+Discrete Mathematics & Compiler Design\\
+Theory of Computation & Artificial Intelligence Programming
+\end{tabular}
+
+\section{Interests and Activities}
+\textsc{Coordinator, Software Events, Techkriti 2013 (IIT Kanpur's Technical Festival)}\\
+{\small Organized 4 programming contests with \textbf{international participation}, including a high performance computing event on \textbf{PARAM Yuva supercomputer}, an esoteric programming language contest, and an AI battle event. The AI battle event witnessed \textbf{1100\% increase in participation} compared to the previous year.}\\\\
+\textsc{Secretary, IIT Kanpur Programming Club}\\
+{\small Conducted workshops, lectures and contests with an overall reach of over 1000 students.}\\\\
+\textsc{Fine Arts and Design}\\
+{\small Actively pursues sketching and digital design as a hobby. \textbf{Winner of flag design competition} in IIT Kanpur's cultural championship for 3 consecutive years. Member of Fine Arts trophy winning team in Freshman and Junior years.}\\\\
+\textsc{English Literary Activities}\\
+{\small Composed treasure hunt for new undergrads. Active member of IIT Kanpur English Literary Society}.
+
+\section{References}
+\begin{tabular}{p{5cm}|p{5cm}|p{6cm}}
+\textbf{Shashank K. Mehta} & \textbf{Amitabha Mukerjee} & \textbf{Francesco Zappa Nardelli}\\
+{\small Professor} & {\small Professor} & {\small Research Scientist}\\
+{\small RM-503, Department of CSE} & {\small RM-507, Department of CSE} & {\small REVES, Inria Sophia-Antipolis}\\
+{\small IIT Kanpur} & {\small IIT Kanpur} & {\small 2004 Route des Lucioles, BP 93}\\
+{\small Kanpur-208016 India} & {\small Kanpur-208016 India} & {\small FR-06902, Sophia-Antipolis, France}\\
+{\small email: \href{mailto:skmehta@cse.iitk.ac.in}{skmehta@cse.iitk.ac.in}} &
+{\small email: \href{mailto:amit@cse.iitk.ac.in}{amit@cse.iitk.ac.in}} &
+{\small email: \href{mailto:francesco.zappa_nardelli@inria.fr}{francesco.zappa\_nardelli@inria.fr}}
+\end{tabular}
+
+\end{document}
