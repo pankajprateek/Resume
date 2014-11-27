@@ -115,37 +115,31 @@
 %Section: Research Experience after Education
 \section{Research Experience}
 \begin{longtable}{r|p{12cm}}
- \textsc{May 2014-Present} & View and Shape Interpolation between Multiple Sketches\\
- &  {\small Advisors: Prof. Vinay Namboodiri and Dr. Adrien Bousseau}\\
- &\small{Objective of the thesis is to interpolate between sketches belonging to the same functional class, but varying in shape as well as view, using minimal user input. The research challenges involved are twofold: non-rigid shape matching and artifact free blending for sketches. Currently, we are trying to \textbf{adapt existing methods for shape matching and non-rigid point set registration to sketchy input}. Later, we plan to develop a novel algorithm which can warp and blend sketches without producing visible artifacts.}\\
+\textsc{Jan 2014 - Present} & M.Tech. Thesis: Approximation Algorithms for common subtree \& related problems\\
+&\small{Mentor: Prof. S. K. Mehta}\\
+& \small{Investigating approximation algorithms and parameterization techniques for the common sub-tree problem and trying to apply them to specialized classes of graphs and related problems like tree edit distance. We are looking into semi-definite relaxations of the problem to find an approximate common subtree. Prior to that, we worked on at is counting number of paths of length less than L between two vertices in a directed graphs and on approximating the number of lines needed to cover a set of planar points (\textsc{Covering Points by Lines}).}\\
+
  \multicolumn{2}{c}{} \\
- \textsc{Aug 2013-Present} & Isolation in Minor-free Graphs\\ 
- &{\small Advisor: Prof. Raghunath Tewari}\\
- &\small{\textbf{Solved the long standing problem} of deterministically isolating a perfect matching for minor-free graphs using a parallel algorithm. As a result, we determined that construction of perfect matching for $K_{3,3}$-free and $K_5$-free graphs is in complexity class NC. Currently, writing a research paper on the results obtained.}\\
- & \small{An older technical report is available at: \href{http://home.iitk.ac.in/~arorar/cs697/repo.pdf}{home.iitk.ac.in/\textasciitilde arorar/cs697/repo.pdf}}\\
- \multicolumn{2}{c}{} \\
-\textsc{Summer 2013} & Crowdanalysis of Images (Reseacrh Intern at Adobe ATL, India)\\
-&{\small Advisor: Ramesh Srinivasaraghavan}\\
-&\small{Developed an asymmetric \textbf{Game With A Purpose (GWAP)}, PicCharades, to annotate images with tags for actions, objects and emotions. Applied gamification theory concepts to attract players via leaderboards, social incentives and traditional game element of competitiveness. \textbf{Received full time job offer.}}\\
-& \small{GWAP available at: \href{https://apps.facebook.com/piccharades}{https://apps.facebook.com/piccharades} (Requires FB Login)}\\
-\multicolumn{2}{c}{} \\
-\textsc{Spring 2012} & Cross Lingual Word Sense Disambiguation\\
-&{\small Advisor: Prof. Amitabha Mukerjee}\\
-&\small{Tagged words in Hindi Wikipedia articles needing disambiguation using their appropriate sense tags. Used cross-lingual information from corresponding English Wikipedia articles, WordNet, Hindi WordNet and Hindi-English dictionary to achieve \textbf{sense-tagging accuracy of 81\%}}.\\
-& \small{Project webpage: \href{http://home.iitk.ac.in/~arorar/cs365/projects/}{home.iitk.ac.in/\textasciitilde arorar/cs365/projects/}}\\
+ \textsc{Aug 2013 - Present} & Anaphora without syntax\\
+ &\small{Mentor: Prof. A. Mukerjee, Prof. A. Karkare, Dr. Sumit Gulwani (MSR Redmond))}\\
+ & \small{Designed a language-independent system for high-school geometry construction problems achieveing an accuracy of more than 90\% for English and Hindi using cross lingual mapping (probabilistically mapping constructs/words in different languages), heuristic based parsing and context based semantic analysis to handle anaphora.}\\
+& \small{Project Webpage: \href{http://cse.iitk.ac.in/users/pratikkr/btp/index.html}{http://cse.iitk.ac.in/users/pratikkr/btp/index.html}}\\
+
+  \multicolumn{2}{c}{} \\
+ \textsc{Summer 2014} & Hunting Compiler Concurrency bugs using x86-tso memory model \\
+ & \small{Mentor: Dr. Francesco Zappa Nardelli, Team Parkas, INRIA, Paris-Rocquencourt}\\
+& \small{We aimed at hunting concurrency bugs in GCC and CLANG to improve compiler optimizations for multi-processor applications by adding global memory trace to study effect of compiler optimizations on global memory accesses, and replay instrumentation to study the manner in which a load instruction affects subsequent instructions and support for control dependency analysis to study effects of conditional statements, and MMX/SSE (128 bit SIMD) instructions}\\
+&\small{Project Link: \href{https://raweb.inria.fr/rapportsactivite/RA2p013/parkas/uid30.html}{https://raweb.inria.fr/rapportsactivite/RA2p013/parkas/uid30.html}}\\
+
+
+\multicolumn{2}{c}{}\\
+\textsc{Mar 2013 - Apr 2013} & Multi-Lingual word learning for containment situations\\
+& \small{Mentor: Prof. Amitabha Mukerjee}\\
+& \small{Attempted to learn synonymous words in multiple languages for a given context using common ground semantics \& label association. Learned design specifications in the given context (peg-in-a-hole) and then tried to learn linguistic semantics for them. }\\
+&\small{Project Webpage: \href{http://home.iitk.ac.in/users/pratikkr/se367/project/}{http://home.iitk.ac.in/users/pratikkr/se367/project/}}\\
+
 \end{longtable}
 
-%Section: Scholarships and additional info
-\section{Scholarships, Achievements and Awards}
-\begin{tabular}{rp{13cm}}
-2014 & Interned at INRIA, France through the \textbf{INRIA Internships Program}\\
-2010-2014 & Merit-cum-Means Scholarship, IIT Kanpur, for maintaining good academic record\\
-2012-2013 & Academic Excellence Award, IIT Kanpur, given to \textbf{top 5\% students}\\
-2010 & \textbf{All India Rank of 345 (top 0.1\%)} in IIT-JEE exam taken by over 400,000 students\\
-2008-2010 & KVPY Fellowship for budding scientists, Govt. of India (awarded to 200 students)\\
-2008-2010 & \textbf{96\% score} in 12\textsuperscript{th} grade exam (standard high school test) conducted by CBSE, India\\
-2008-2009 & National Talent Search Scholarship, Govt. of India (awarded to 1000 students)
-\end{tabular}
 
 \section{Teaching}
 \begin{tabular}{r|p{12cm}}
@@ -169,12 +163,49 @@
 &\small{This talk, motivated by the works of Rudi L. Cilibrasi, and Paul M. B. Vitanyi, presents a theory of quantifying similarity between words and phrases based on information distance and Kolmogorov Complexity. By calculating similarity based on Google page counts, applications to hierarchial clustering, classification, and language translation are discussed.}\\
 \end{tabular}
 
+\section{Selected Implementation Projects}
+\begin{tabular}{r|p{12cm}}
+ \textsc{Aug 2013 - Nov 2013} & Easy Cloud Storage \\
+ &\small{Mentor: Prof. T.V. Prabhakar}\\
+&\small{Developed a Cloud Storage Platform which integrates existing cloud services like Dropbox, Google Drive, SkyDrive and Box.net. Provided an abstract layer allowing to use these services as an extended cloud storage using a desktop application}\\
+& \small{Project Link: \href{https://github.com/pankajprateek/easyCloud}{https://github.com/pankajprateek/easyCloud}}\\
+
+ \multicolumn{2}{c}{} \\
+\textsc{Spring 2013} & C++ Compiler Design\\
+&\small{Implemented a working compiler for a subset of the C++ language, targeted at MIPS architecture. \textbf{Built all compiler modules}: lexer, parser with error checking grammar, symbol table and code generator; from ground up.}\\
+
+\multicolumn{2}{c}{} \\
+\textsc{Summer 2012} & Parser Generator in Python\\
+&\small{Mentor: Dr. Amey Karkare}\\
+& \small{Built a parser generator which performs lexical analysis on a BNF grammar and generates the corresponding parser by generating the parse tables and lexical analyser for the input grammar}\\
+& \small{Project Link: \href{http://www2.cse.iitk.ac.in/karkare/parsegen/}{http://www2.cse.iitk.ac.in/karkare/parsegen/} (Internal)}\\
+
+ \multicolumn{2}{c}{} \\
+ \textsc{Jan 2012 - Apr 2012} & Using Progressive Stochastic Search to solve Sudoku CSP \\
+&\small{Mentor: Prof. Amitabha Mukerjee}\\
+& \small{Modelled Sudoku as a constraint satisfaction problem and implemented PSS and iterative PSS to solve a given Sudoku puzzle and observed that PSS and IPSS are better than other stochastic algorithms like Simulated Annealing and Cultural Genetic Algorithm}\\
+&\small{Project Webpage: \href{http://home.iitk.ac.in/users/pratikkr/cs365/projects/}{http://home.iitk.ac.in/users/pratikkr/cs365/projects/}}\\
+
+\end{tabular}
+
 \section{Skills}
 \begin{tabular}{rl}
-Programming Languages: & C/C++, Python, MATLAB\\
-Graphics: & OpenGL (using C), WebGL (using three.js)\\
-Utilities: & make, git, bash, \LaTeX, Adobe Photoshop\\
+Programming Languages: & Proficient (C, C++, Python, PHP), Pascal, OCaml, Assembly (x86, MIPS)\\
+Utilities: & make, git, bash, \LaTeX, svn, bash, gdb, Matlab, Lex/Yacc, PLY\\
 Web Technologies: & PHP, Javascript, Google App Engine, HTML/CSS\\
+\end{tabular}
+
+%Section: Scholarships and additional info
+\section{Scholarships, Achievements and Awards}
+\begin{tabular}{rp{13cm}}
+2013 & Interned at INRIA, France through the \textbf{INRIA Internships Program}\\
+2010 & \textbf{All India Rank of 157 (top 0.1\%)} in IIT-JEE exam taken by over 400,000 students\\
+2010 & Gold Medal at the International Chemistry Olympiad Orientation-cum-Selection Camp at HBCSE, TIFR (36 out of 28150 candidates)\\
+2009 & Olympiad Rank 7 in the International Olympiad of Mathematics\\
+2008-2010 & KVPY Fellowship for budding scientists, Govt. of India (awarded to 200 students)\\
+2008-2009 & National Talent Search Scholarship, Govt. of India (Merit List 24 of 1000 students)\\
+2008 & Gold Medal at the State Science Talent Search Examination (SSTSE)\\
+2008 & Qualified for Indian National Olympiad in Informatics (INOI)
 \end{tabular}
 
 \section{Relevant Courses}
@@ -189,14 +220,14 @@ Theory of Computation & Artificial Intelligence Programming
 \end{tabular}
 
 \section{Interests and Activities}
-\textsc{Coordinator, Software Events, Techkriti 2013 (IIT Kanpur's Technical Festival)}\\
-{\small Organized 4 programming contests with \textbf{international participation}, including a high performance computing event on \textbf{PARAM Yuva supercomputer}, an esoteric programming language contest, and an AI battle event. The AI battle event witnessed \textbf{1100\% increase in participation} compared to the previous year.}\\\\
-\textsc{Secretary, IIT Kanpur Programming Club}\\
-{\small Conducted workshops, lectures and contests with an overall reach of over 1000 students.}\\\\
-\textsc{Fine Arts and Design}\\
-{\small Actively pursues sketching and digital design as a hobby. \textbf{Winner of flag design competition} in IIT Kanpur's cultural championship for 3 consecutive years. Member of Fine Arts trophy winning team in Freshman and Junior years.}\\\\
-\textsc{English Literary Activities}\\
-{\small Composed treasure hunt for new undergrads. Active member of IIT Kanpur English Literary Society}.
+\textsc{Experience in Algorithmic and Competitive Programming}
+\begin{itemize}
+\item \small{Codechef (boygenius: long contest rating 1577), SPOJ (pankaj\_prateek: global rank 1007), Codeforces (boygenius: rating 1646), Hackerrank (boy\_genius: Score 2136)}
+\item \small{Problem setter for various intra IITK and open-to-all contests}
+\item \small{Set up judges (DomJudge) for online programming contests (ACM-ICPC style) and assignments for various courses}
+\end{itemize}
+\textsc{Coordinator, IOPC (International Online Programming Contest and Software Events, Techkriti 2013 (IIT Kanpur's Technical Festival)}\\
+{\small Worked as a probem setter and tester for IOPC (a premier algorithmic coding contest among colleges of India). Organized 4 programming contests with \textbf{international participation}, including India's first high performance computing event on \textbf{PARAM Yuva supercomputer}, an esoteric programming language contest, and an AI battle event. The AI battle event witnessed \textbf{1100\% increase in participation} compared to the previous year.}\\\\
 
 \section{References}
 \begin{tabular}{p{5cm}|p{5cm}|p{6cm}}
@@ -208,6 +239,16 @@ Theory of Computation & Artificial Intelligence Programming
 {\small email: \href{mailto:skmehta@cse.iitk.ac.in}{skmehta@cse.iitk.ac.in}} &
 {\small email: \href{mailto:amit@cse.iitk.ac.in}{amit@cse.iitk.ac.in}} &
 {\small email: \href{mailto:francesco.zappa_nardelli@inria.fr}{francesco.zappa\_nardelli@inria.fr}}
+\end{tabular}\\\\
+
+
+\begin{tabular}{p{5cm}p{5cm}p{6cm}}
+\textbf{Amey Karkare} & &\\
+{\small Assistant Professor} & &\\
+{\small RM-403, Department of CSE} & &\\
+{\small IIT Kanpur} & &\\
+{\small Kanpur-208016 India} & &\\
+{\small email: \href{mailto:karkare@cse.iitk.ac.in}{karkare@cse.iitk.ac.in}} & & \\
 \end{tabular}
 
 \end{document}
